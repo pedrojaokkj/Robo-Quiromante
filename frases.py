@@ -1,7 +1,5 @@
 #!/usr/bin/env pybricks-micropython
 
-import os
-from colorama import init, Fore, Back
 
 frasesIA = [
     "Você tem muitas escolhas à sua frente.",
@@ -104,9 +102,5 @@ frasesIA = [
 ]
 
 
-init()
 
-
-os.system('cls')
-print(Fore.BLUE + frasesIA[4])
 

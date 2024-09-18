@@ -7,9 +7,10 @@ from pybricks.tools import wait, StopWatch, DataLog
 from pybricks.robotics import DriveBase
 from pybricks.media.ev3dev import SoundFile, ImageFile
 
+from testeCor import testeCor
 from frases import frasesIA
 import os
-from colorama import init, Fore, Back
+
 
 # This program requires LEGO EV3 MicroPython v2.0 or higher.
 # Click "Open user guide" on the EV3 extension tab for more information.
@@ -17,11 +18,15 @@ from colorama import init, Fore, Back
 
 # Create your objects here.
 ev3 = EV3Brick()
-botao = TouchSensor(Port.S2)
-sensorCor = ColorSensor(Port.S1)
+botao = TouchSensor(Port.S1)
+sensorCor = ColorSensor(Port.S2)
+
 
 
 # Write your program here.
+
+
+
 
 while True:
     ev3.speaker.beep()
@@ -30,17 +35,19 @@ while True:
 
     while botao.pressed() == False:
         if contadorOlhos % 10 == 0:
-            img = ImageFile.TIRED_RIGHT()
+            img = ImageFile.TIRED_RIGHT
         else:
-            img = ImageFile.TIRED_LEFT()
+            img = ImageFile.TIRED_LEFT
             
             
         ev3.screen.draw_image(0, 0, img, Color.BLACK)
+
+        
         wait(10)
         
     contagem = 0
     ev3.screen.draw_image(0, 0, ImageFile.DIZZY, Color.BLACK)
-    while True:   #substituir true pelo valor de parada 
+    while sensorCor.color() == None and sensorCor.reflection() < 2:   #substituir true pelo valor de parada 
         
         if contagem < len(frasesIA):
             contagem +=1
@@ -51,10 +58,10 @@ while True:
         wait(10)
         
 
-    init()
+
     ev3.screen.draw_image(0, 0, ImageFile.UP, Color.BLACK)
     
-    os.system('cls')
+    print("\x1b[2J\x1b[H")  # Limpar a tela do console
     print('.')
     wait(1000)
     print('.')
@@ -62,7 +69,10 @@ while True:
     print('.')
     wait(1000)
     
-    print(Fore.BLUE + frasesIA[contagem])
+
+
+    print("\x1b[94m" + frasesIA[contagem])  # Imprimir em cor azul
+    print("\x1b[0m")  # Restaurar cor padrão
     
         
     
