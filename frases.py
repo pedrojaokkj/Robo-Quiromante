@@ -99,7 +99,43 @@ frasesIA = [
     "Alguém que você não esperava vai te dar uma boa notícia.",
     "Você terá que se preparar para lidar com um desafio inesperado.",
     "Alguém com quem você tem pouco contato vai se tornar mais presente em sua vida."
+    "O futuro parece promissor para você, continue nesse caminho!",
+    "Vejo grandes oportunidades chegando em breve.",
+    "Você possui uma energia muito positiva ao seu redor.",
+    "Prepare-se para surpresas encontradas nos próximos dias.",
+    "Sua linha da fortuna está bem marcada... talvez seja hora de jogar na loteria!",
+    "Esses novos sentimentos revelam um momento de indecisão, uma escolha que moldará não apenas o seu caminho, mas sua essência.",
+    "As delicadas marcas em sua linha da cabeça sugerem um intelecto que busca mais do que respostas; você busca sabedoria.",
+    "Sua linha do destino se ergue com força, mostrando que você não é alguém que se conforma, mas alguém que molda seu próprio destino.",
+    "Vejo aqui que a jornada da sua alma está longe de acabar. Cada passo que você dá é uma dança entre o que foi e o que ainda será.",
+    "Existe uma marca aqui que não pertence ao tempo presente, como se o eco de uma vida passada ainda estivesse ao seu lado.",
+    "O que está escrito em sua mão não é apenas o seu destino, mas um reflexo de quem você se tornou através dos desafios e vitórias.",
+    "Há um brilho oculto em sua linha da fortuna, algo que sugere que sua verdadeira riqueza não é intangível.",
+    "O universo não escreve o destino, ele apenas oferece um quadro em branco. O pincel está nas suas mãos.",
+    "Vejo nas suas linhas a promessa de um futuro que só poderá ser realizado quando você confiar plenamente em sua própria força.",
+    "Os caminhos traçados aqui não são estáticos, são dinâmicos, movidos pelas suas decisões. O que você vai escolher?",
+    "O destino se dobra diante daqueles que ousam questionar. Vejo que suas mãos carregam essa coragem.",
+    "Assim como as estrelas moldam constelações, as linhas em suas mãos moldam a jornada da sua vida. Tudo está interligado.",
+    "As linhas suaves da sua palma revelam um coração que anseia por um amor tranquilo e seguro, mas que está disposto a navegar como tempestades.",
+    "Há sinais aqui de que você está destinado a viver amores que deixam marcas profundas, cicatrizes que, de alguma forma, tornam sua alma mais forte.",
+    "Vejo um amor que transcende o tempo. Como se as mãos que você segura hoje, de alguma forma, já tenham tocado as suas em outras vidas.",
+    "Suas mãos contam a história de um coração que não se cansa de amar, mesmo quando ferido. Há uma força em sua resiliência emocional.",
+    "O amor não se mede apenas pelo tempo, mas pela profundidade da conexão. Suas mãos revelam que você está destinado a amar intensamente.",
+    "Há uma dualidade em seu coração: o desejo por liberdade e o desejo por união. O amor verdadeiro para você será aquele que equilibra os dois.",
+    "Uma reviravolta devastadora se aproxima, como uma tempestade que arrasará o que você construiu. Mas é nesse cenário de destruição que você descobrirá novas fundações, mais sólidas do que antes.",
+    "Sua jornada está prestes a encontrar um ponto de ruptura, algo que parece impossível de suportar. Mas é nas ruínas desse momento que você encontra a chave para um renascimento grandioso.",
+    "Há sinais de um colapso iminente, como se tudo o que você conhece fosse posto à prova. No entanto, as mesmas linhas que mostram esse desafio também revelam sua capacidade de transcender qualquer adversidade.",
+    "O caminho que vejo aqui está marcado por uma perda significativa, um evento que mudará o curso de sua vida. Mas essa mudança será o acontecimento para sua maior evolução.",
+    "Embora o destino traga uma prova severa à sua porta, o que vejo ao final dessa batalha é uma versão mais forte e imbatível de você mesmo.",
+    "Uma tragédia acontecerá, como uma tragédia que varrerá tudo. Mas, após uma devastação, o que florescerá será algo que nem mesmo você sabia que poderia alcançar.",
+    "As dificuldades que se aproximam parecem insuperáveis, como montanhas à frente. Mas suas mãos mostram que, ao escalar essas alturas, você verá o mundo de uma maneira que jamais imaginou.",
+    "A vida vai desmoronar ao seu redor, como uma torre que desaba. Mas, das ruínas, você construirá algo ainda mais forte, algo que refletirá sua verdadeira essência.",
+    "O destino reserva um teste amargo, um momento de dor profunda. Mas, ao atravessá-lo, você encontrará uma nova força que o conduzirá a um caminho de luz e triunfo.",
+    "A vida te lançará em uma escuridão, como se você fosse mergulhar no abismo. Mas, ao emergir, você será transformado, com uma nova luz interior guiando seus passos.",
+    "O que vejo é um colapso progressivo, algo que você não poderá evitar. No entanto, será a partir dessa destruição que você encontrará o caminho para sua verdadeira ascensão.",
+    "As linhas da sua mão mostram uma tragédia iminente, uma fase de grande sofrimento. Mas é precisamente na profundidade dessa dor que sua alma se elevará, mais forte e mais luminosa do que nunca."
 ]
+
 
 
 
