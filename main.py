@@ -8,7 +8,9 @@ from pybricks.robotics import DriveBase
 from pybricks.media.ev3dev import SoundFile, ImageFile
 
 from testeCor import testeCor
+from pularLinhas import pularLinhas
 from frases import frasesIA
+from frasesExtra import frasesExtra
 import os
 
 
@@ -17,6 +19,11 @@ import os
 
 
 # Create your objects here.
+
+frases = frasesIA + frasesExtra 
+# frases = frasesKids
+
+
 ev3 = EV3Brick()
 botao = TouchSensor(Port.S1)
 sensorCor = ColorSensor(Port.S2)
@@ -29,7 +36,12 @@ sensorCor = ColorSensor(Port.S2)
 
 while True:
     ev3.speaker.beep()
+    print("\x1b[2J\x1b[H")  # Limpar a tela do console
+    pularLinhas(5)
+    print("\x1b[94m" + 'TOQUE NA BOLA DE CRISTAL')  # Imprimir em cor azul
 
+    
+    
     contadorOlhos = 1
     ev3.screen.load_image(ImageFile.TIRED_RIGHT)
     while botao.pressed() == False:
@@ -49,15 +61,19 @@ while True:
         
     contagem = 0
     ev3.screen.load_image(ImageFile.DIZZY)
-    while sensorCor.color() == None and sensorCor.reflection() < 2:   #substituir true pelo valor de parada 
+    max = len(frases)
+    print("\x1b[2J\x1b[H")  # Limpar a tela do console
+    pularLinhas(5)
+    print("\x1b[94m" + 'ESTENDA SUA MÃO SOBRE A LUZ(Sensor de cor).')  # Imprimir em cor azul
+    while sensorCor.color() in [None, Color.BLACK]:   #substituir true pelo valor de parada 
         
-        if contagem < len(frasesIA):
+        if contagem < max:
             contagem +=1
         else:
             contagem = 0
-        
             
-        wait(40)
+
+        
         
 
 
@@ -76,8 +92,13 @@ while True:
     
 
     ev3.speaker.beep(600, 200)
-    print("\x1b[94m" + frasesIA[contagem])  # Imprimir em cor azul
+    pularLinhas(2)
+    print("\x1b[94m" + frases[contagem], contagem)  # Imprimir em cor azul
     print("\x1b[0m")  # Restaurar cor padrão
+    while botao.pressed() == False:
+        wait(1)
+        
+    wait(500)
     
         
     
