@@ -27,26 +27,28 @@ sensorCor = ColorSensor(Port.S2)
 
 
 
-
 while True:
     ev3.speaker.beep()
 
     contadorOlhos = 1
-
+    ev3.screen.load_image(ImageFile.TIRED_RIGHT)
     while botao.pressed() == False:
-        if contadorOlhos % 10 == 0:
+        if contadorOlhos == 80:
             img = ImageFile.TIRED_RIGHT
-        else:
+            ev3.screen.load_image(img)
+        elif contadorOlhos == 15:
             img = ImageFile.TIRED_LEFT
-            
-            
-        ev3.screen.draw_image(0, 0, img, Color.BLACK)
+            ev3.screen.load_image(img)
+        elif contadorOlhos == 100:
+            contadorOlhos = 0
 
-        
-        wait(10)
+        contadorOlhos += 1
+
+        wait(50)
+
         
     contagem = 0
-    ev3.screen.draw_image(0, 0, ImageFile.DIZZY, Color.BLACK)
+    ev3.screen.load_image(ImageFile.DIZZY)
     while sensorCor.color() == None and sensorCor.reflection() < 2:   #substituir true pelo valor de parada 
         
         if contagem < len(frasesIA):
@@ -55,22 +57,25 @@ while True:
             contagem = 0
         
             
-        wait(10)
+        wait(40)
         
 
 
-    ev3.screen.draw_image(0, 0, ImageFile.UP, Color.BLACK)
+    ev3.screen.load_image(ImageFile.UP)
     
     print("\x1b[2J\x1b[H")  # Limpar a tela do console
+    ev3.speaker.beep(100, 150)
     print('.')
     wait(1000)
+    ev3.speaker.beep(100, 150)
     print('.')
     wait(1000)
+    ev3.speaker.beep(100, 150)
     print('.')
     wait(1000)
     
 
-
+    ev3.speaker.beep(600, 200)
     print("\x1b[94m" + frasesIA[contagem])  # Imprimir em cor azul
     print("\x1b[0m")  # Restaurar cor padrão
     
